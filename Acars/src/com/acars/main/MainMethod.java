@@ -90,10 +90,6 @@ public class MainMethod {
 	public static void main(String[] args) {
 		System.out.println("Running tests");
 		System.out.println("T1");
-		FSFlightSim sim = new FSFlightSim();
-		System.out.println("T2");
-		System.out.println("name " + sim.StartSituationName() );
-		System.out.println("T3");
 		int ret = fsuipc_wrapper.Open(fsuipc_wrapper.SIM_ANY);
 		System.out.println("ret =" + ret);
 		if (ret == 0) {
